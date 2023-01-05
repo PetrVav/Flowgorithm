@@ -1,4 +1,8 @@
-﻿int[] CreateArray(int count)
+﻿// Задача:
+// Задать массис из N положительных чисел 
+// и найти в нем сумму двузначных элементов
+
+int[] CreateArray(int count)
 {
     return new int[count];
 }
