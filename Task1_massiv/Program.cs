@@ -1,4 +1,8 @@
-﻿int[] elements = new int[10];
+﻿// Задача:
+// Задать массис из N положительных чисел 
+// и найти в нем сумму двузначных элементов
+
+int[] elements = new int[10];
 int sum = 0;
 int index = 0;
 int length = elements.Length;
