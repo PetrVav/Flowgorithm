@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="&#1055;&#1077;&#1090;&#1088;"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-05 06:04:42 "/>
+        <attribute name="created" value="0J/QtdGC0YA7REVTS1RPUC03Tzc4Tk5QOzIwMjMtMDEtMDU7IjAyOjI1OjA4ICI7NjU1OQ=="/>
+        <attribute name="edited" value="0J/QtdGC0YA7REVTS1RPUC03Tzc4Tk5QOzIwMjMtMDEtMDU7IjA2OjA0OjQyICI7MTA7NjcxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="elements" type="Integer" array="True" size="10"/>
+            <declare name="sum, index, length, current" type="Integer" array="False" size=""/>
+            <assign variable="length" expression="Size(elements)"/>
+            <assign variable="index" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="index &lt; length">
+                <assign variable="current" expression="Random(30)"/>
+                <assign variable="elements[index]" expression="current"/>
+                <output expression="elements[index]" newline="True"/>
+                <if expression="current &gt;= 10 and current &lt;= 99">
+                    <then>
+                        <assign variable="sum" expression="sum + current"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="index" expression="index + 1"/>
+            </while>
+            <output expression="(&quot;---&quot;)" newline="True"/>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
